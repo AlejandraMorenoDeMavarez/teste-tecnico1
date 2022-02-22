@@ -1,0 +1,520 @@
+
+    :root {
+        --white: #ffffff;
+        --black: #000000;
+        --grey1: #E0E0E0;
+        --grey2: #979797;
+        --grey3: #888888;
+        --grey4: #333333;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: lato;
+    }
+
+    .container {
+        position: relative;
+        width: 411px;
+        height: 731px;
+        background: var(--white);
+    }
+
+    .status-bar {
+        position: absolute;
+        width: 411px;
+        height: 24px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        background-color: var(--black);
+    }
+
+    .header {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 411px;
+        height: 60px;
+        top: 24px;
+        left: 0px;
+        background: var(--grey1);
+        align-items: center;
+    }
+
+    .form-navigation {
+        display: none;
+    }
+
+    .title {
+        font-family: Lato;
+        font-style: normal;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        text-align: center;
+        color: var(--grey4);
+    }
+
+    .menu {
+        width: 18px;
+        height: 10px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: index 1;
+    }
+
+    .logo {
+        position: absolute;
+        width: 30px;
+        height: 18px;
+        left: 22px;
+        top: 20px;
+    }
+
+    .form {
+        position: absolute;
+        width: 371px;
+        height: 290px;
+        left: 20px;
+        top: 110px;
+        border-bottom: 1px solid var(--grey2);
+    }
+
+    .sub-title1 {
+        display: none;
+    }
+
+    label {
+        color: var(--black);
+        font-size: 12px;
+        font-family: lato;
+        margin-top: 5px;
+    }
+
+    #transaction-type {
+        color: var(--grey4);
+        font-family: lato;
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid rgb(207, 204, 204);
+    }
+
+    input {
+        display: flex;
+        flex-direction: column;
+        color: var(--grey3);
+        font-size: 12px;
+        font-family: Inter;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid rgb(207, 204, 204);
+    }
+
+    .button-primary {
+        background-color: var(--grey4);
+        color: var(--white);
+        border: none;
+        border-radius: 4px;
+        width: 371px;
+        height: 32px;
+        font-family: lato;
+        font-size: 14px;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 220px;
+        bottom: 0%;
+    }
+
+    .button-primary:hover {
+        border: 1px solid var(--grey4);
+        color: var(--grey4);
+        background-color: var(--white);
+    }
+
+    .account-statement {
+        position: absolute;
+        width: 371px;
+        height: 281px;
+        left: 20px;
+        top: 320px;
+        background: #FFFFFF;
+    }
+
+    .sub-title2 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--black);
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: sans-serif;
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    .thead {
+        border-bottom: 1px solid var(--grey2);
+    }
+
+    .tr {
+        border-bottom: 1px solid rgb(207, 204, 204);
+        height: 30px;
+    }
+
+    span {
+        color: red;
+        font-family: lato;
+        font-size: 8px;
+    }
+
+    .footer {
+        position: absolute;
+        width: 411px;
+        height: 8px;
+        left: 0px;
+        right: 0px;
+        top: 731px;
+        background: var(--grey2);
+    }
+
+    /*responsive portrait*/
+    @media screen and (min-width: 768px) {
+        .container {
+            position: relative;
+            width: 768px;
+        }
+
+        .status-bar {
+            flex-direction: row;
+            width: 768px;
+        }
+
+        .header {
+            flex-direction: row;
+            width: 768px;
+        }
+
+        .form-navigation {
+            display: none;
+        }
+
+        .form {
+            width: 728px;
+            height: 189px;
+            border-radius: 4px;
+            border: 1px solid var(--grey2);
+            margin-left: auto;
+            margin-right: auto;
+            top: 120px;
+            
+        }
+
+
+        .sub-title1 {
+            display: block;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 40px;
+            color: var(--black);
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .sub-title2 {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 40px;
+            color: var(--black);
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        label.form-label {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        /*input e select */
+
+         
+
+        .button-primary {
+            width: 200px;
+            margin-left: 500px;
+            top: 140px;
+        }
+
+        .account-statement {
+            width: 728px;
+            height: 281px;
+            top: 316px;
+        }
+
+        .table {
+            font-size: 14px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .sub-title1 .sub-2 {
+            font-size: 20px;
+        }
+
+        .footer {
+            width: 768px;
+        }
+
+        /*responsive landscape*/
+        @media screen and (min-width: 1112px) {
+            .container {
+                width: 1112px;
+                height: 1024px;
+            }
+
+            .status-bar {
+                width: 1112px;
+            }
+
+            .header {
+                width: 1112px;
+            }
+
+            .title {
+                display: block;
+                margin-left: 80px;
+            }
+
+            .form-navigation {
+                position: absolute;
+                display: inline;
+                width: 350px;
+                height: 40px;
+                right: 100px;
+                top: 10px;
+                background-color: var(--white);
+            }
+
+            .navigation a {
+                display: inline-block;
+                padding: 10px;
+                text-decoration: none;
+                font-family: lato;
+                font-style: normal;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+                color: var(--grey4);
+            }
+
+            .form {
+                position: relative;
+                width: 400px;
+                height: 344px;
+                top: 172px;
+                margin-left: 5px;
+                padding: 10px;
+            }
+
+            .sub-title1 {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: var(--black);
+                text-align: center;
+                margin-bottom: 20px;
+
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                color: var(--black);
+                font-family: lato;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 22px;
+                margin-top: 0px;
+
+            }
+
+            .form input {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                height: 32px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+
+            .form select {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                height: 32px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+
+            .button-primary {
+                width: 80%;
+                height: 32px;
+                margin-top: 180px;
+                margin-left: 40px;
+            }
+
+            .account-statement {
+                width: 652px;
+                height: 281px;
+                top: 0px;
+                left: 440px;
+            }
+
+            .footer {
+                width: 1112px;
+            }
+
+            /*responsive desktop*/
+            @media screen and (min-width: 1500px) {
+                .container {
+                width: 1500px;
+                height: 1000px;
+            }
+
+            .status-bar {
+               display: none;
+            }
+
+            .header {
+                width: 1500px;
+            }
+
+            .title {
+                display: block;
+                margin-left: 80px;
+            }
+
+            .form-navigation {
+                position: absolute;
+                display: inline;
+                width: 350px;
+                height: 40px;
+                right: 100px;
+                top: 10px;
+                background-color: var(--white);
+            }
+
+            .navigation a {
+                display: inline-block;
+                padding: 10px;
+                text-decoration: none;
+                font-family: lato;
+                font-style: normal;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+                color: var(--grey4);
+            }
+
+            .form {
+                position: relative;
+                width: 400px;
+                height: 344px;
+                top: 172px;
+                margin-left: 5px;
+                padding: 10px;
+            }
+
+            .sub-title1 {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: var(--black);
+                text-align: center;
+                margin-bottom: 20px;
+
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                color: var(--black);
+                font-family: lato;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 22px;
+                margin-top: 0px;
+
+            }
+
+            .form input {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                height: 32px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+
+            .form select {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                height: 32px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+
+            .button-primary {
+                width: 80%;
+                height: 32px;
+                margin-top: 180px;
+                margin-left: 40px;
+            }
+
+            .account-statement {
+                width: 652px;
+                height: 281px;
+                top: 0px;
+                left: 440px;
+            }
+
+            .footer {
+                width: 1500px;
+            }
+            }
+        }
+    }
+
