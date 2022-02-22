@@ -1,0 +1,107 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --grey1: #E0E0E0;
+    --grey2: #979797;
+    --grey3: #888888;
+    --grey4: #333333;
+    
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+  
+}
+.container{
+    position: relative;
+    width: 768px;
+    height: 1024px;
+    background: var(--white);    
+}
+.status-bar{
+    position: absolute;
+    width: 768px;
+    height: 24px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: var(--black);
+}
+.navigation{
+    position: absolute;
+    width: 252px;
+    height: 1000px;
+    right: 0px;
+    top: 24px;
+    background-color: var(--grey4);
+}
+img{
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    background: var(--white);
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover{
+    background-color: var(--grey2);
+    color: var(--grey4);
+    width: 242px;
+    transition: all .2s;   
+}
+.resumo {
+    display: block;
+    text-align: right;
+    height: 32px; 
+    margin-top: 80px;
+    padding: 5px;
+    font-family:lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.dashboard{
+    display: block;
+    text-align: right;
+    height: 32px;
+    left: 155px;
+    padding: 5px;
+    font-family: lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.configurações{
+    display: block;
+    text-align: right;
+    height: 32px;
+    left: 130px;
+    padding: 5px;
+    font-family: lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .navigation{
+        width: 100%;
+    }
+    .resumo{
+        text-align: left;
+    }
+    .dashboard{
+        text-align: left; 
+    }
+    .configurações{
+    text-align: left;
+    }
+    }
